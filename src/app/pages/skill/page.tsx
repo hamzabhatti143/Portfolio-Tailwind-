@@ -1,39 +1,34 @@
-import Skills from "@/components/skill"
-import Project from "@/components/project"
-import Image from "next/image";
-import Header from "@/components/header";
-import Footer from "@/components/footer";
+import Header from '@/components/header'
+import Skill from "@/components/skill"
+import Footer from '@/components/footer'
+import Image from "next/image"
+import React from 'react'
 
-
-export default function Home() {
+function page() {
   return (
     <>
-    <Header />
-      <section className="w-full h-[593px] mt-36 md:mt-0">
+        <Header />
+        <section className="w-full h-[593px] mt-36 md:mt-0">
         <div className="w-full md:w-[1245px] h-[495px] flex flex-col md:flex-row justify-center items-center">
         <div className="w-full md:w-1/2 p-0 md:p-16 text-center">
-            <h1 className="text-2xl sm:text-2xl md:text-[32px] text-primary font-semibold">Hi👋, I’m a </h1>
-            <span className="text-2xl sm:text-3xl md:text-5xl text-primary font-semibold">Software Developer</span>
-            <p className="text-base sm:text-lg md:text-[18px] pt-4 sm:pt-6">I’m <b className="font-bold">John Doe</b>, a developer 
-            dedicated to making the world a better place one line of code at a time.</p>
+            <h2 className="text-2xl sm:text-3xl md:text-5xl text-primary font-semibold">Skills That Drive Success</h2>
+            <p className="text-base sm:text-lg md:text-[18px] pt-4 sm:pt-6">This keeps it short and impactful, aligning 
+            well with the tagline! Let me know if you’d like any adjustments.</p>
             <button className="bg-alert w-[90px] h-[42] p-2 mt-8 text-white border border-red">Hire Me</button>
         </div>
 
         <div className="w-full md:w-1/2">
           <Image
-            src={"/images/profile.png"}
+            src={"/images/skill-port.jpg"}
             alt=""
-            width={390}
+            width={590}
             height={495}
-            className="w-[600px] h-[400px] md:w-[390px] md:h-[495px] ml-0 md:ml-[130px]"
+            className="w-[600px] h-[400px] md:w-[490px] md:h-[495px] ml-0 md:ml-[70px]"
           />
         </div>
         </div>
-      </section>
-
-      <Skills />
-      <Project />
-      <section className="w-full h-auto md:h-[495px] mb-48 sm:p-4">
+      </section><Skill />
+<section className="w-full h-auto md:h-[495px] mb-48 sm:p-4">
             <h1 className="text-4xl font-semibold text-center text-alert mt-20">Contact me</h1>
 
         <div className="w-full md:w-[1235px] sm-w-1/2 h-[414px] flex flex-col sm:flex-row mt-24">
@@ -50,10 +45,10 @@ export default function Home() {
           </div>
           </div>
         </div>
-      </section>    
-
+      </section> 
       <Footer />
-
     </>
-  );
+  )
 }
+
+export default page
