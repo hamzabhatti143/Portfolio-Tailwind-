@@ -11,27 +11,27 @@ function project() {
           <p className="text-xl md:text-2xl">A select number of projects</p>
         </div>
 
-        <div className="flex flex-col md:flex-row justify-center items-center">
+        <div className="w-full flex flex-col md:flex-row justify-center items-center">
 
-        <div className="w-full sm:w-[300px] md:w-[381px] p-4 md:p-8">
+        <div className="w-full   p-4 md:p-8">
           <Image src={"/images/port-1.png"} alt='Portfolio-1' width={381} height={276} className='p-3 mx-auto'/>
-            <p className="text-center p-4 text-white mt-[-10px]">Made a social media manager template using HTML 5, CSS and JS.</p>
+            <p className="text-center p-4 text-white">Made a social media manager template using HTML 5, CSS and JS.</p>
             <Link href="" className="flex justify-center items-center">
             <button className="text-white border-2 border-slate-900 p-2 w-24">Hire Me</button>
             </Link>
         </div>
 
-        <div className="w-full sm:w-[300px] md:w-[381px] p-4 md:p-8">
+        <div className="w-full  p-4 md:p-8">
           <Image src={"/images/port-2.png"} alt='Portfolio-2' width={381} height={276} className='p-3 mx-auto'/>
-            <p className="text-center p-4 text-white mt-[-10px]">Made a social media manager template using HTML 5, CSS and JS.</p>
+            <p className="text-center p-4 text-white ">Made a social media manager template using HTML 5, CSS and JS.</p>
             <Link href="" className="flex justify-center items-center">
             <button className="text-white border-2 border-slate-900 p-2 w-24">Hire Me</button>
             </Link>
         </div>
 
-        <div className="w-full sm:w-[300px] md:w-[381px] p-4 md:p-8">
-          <Image src={"/images/port-3.png"} alt='Portfolio-3' width={381} height={276} className="p-3 mx-auto"/>
-            <p className="text-center p-4 text-white mt-[30px]">Made an I.P address tracking website.</p>
+        <div className="w-full p-4 md:p-8">
+          <Image  src={"/images/port-3.png"} alt='Portfolio-3' width={381} height={276} className="p-3 mx-auto"/>
+            <p className="text-center p-4 text-white mt-[20px]">Made an I.P address tracking website.</p>
             <Link href="" className="flex justify-center items-center">
             <button className="text-white border-2 border-slate-900 p-2 w-24">Hire Me</button>
             </Link>

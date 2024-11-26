@@ -3,9 +3,10 @@ import Image from "next/image";
 function footer() {
   return (
     <>
+    
       <div className="bg-[url('/images/wave.svg')] h-auto md:h-[390px] w-full bg-no-repeat bg-fill flex flex-col sm:flex-row justify-between items-center">
         {/* Left Section */}
-        <div className="w-[315px] flex justify-center items-center flex-col pt-32">
+        <div className="w-full md:w-1/2 lg:w-[100%] flex justify-center items-center flex-col pt-32">
           <p className="text-white">My social media links:</p>
           <div className="w-[315px] p-2 flex justify-center items-center">
             <a href="https://www.linkedin.com/in/hamzabhatti143/">
@@ -48,7 +49,7 @@ function footer() {
         </div>
 
         {/* Right Section */}
-        <div className="w-[370px] flex justify-center items-center flex-col pt-24 pr-8">
+        <div className="w-1/2 flex justify-center items-center flex-col pt-24">
           <p className="text-white">More Project I have worked on</p>
           <p className="flex items-center text-white">
             <Image

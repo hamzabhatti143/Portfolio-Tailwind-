@@ -9,8 +9,9 @@ export default function Home() {
   return (
     <>
     <Header />
-      <section className="w-full h-[593px] mt-36 md:mt-0">
-        <div className="w-full md:w-[1245px] h-[495px] flex flex-col md:flex-row justify-center items-center">
+
+      <section className="w-full h-screen mt-36 md:mt-0">
+        <div className="w-full flex flex-col md:flex-row justify-center items-center">
         <div className="w-full md:w-1/2 p-0 md:p-16 text-center">
             <h1 className="text-2xl sm:text-2xl md:text-[32px] text-primary font-semibold">Hi👋, I’m a </h1>
             <span className="text-2xl sm:text-3xl md:text-5xl text-primary font-semibold">Software Developer</span>
@@ -19,13 +20,13 @@ export default function Home() {
             <button className="bg-alert w-[90px] h-[42] p-2 mt-8 text-white border border-red">Hire Me</button>
         </div>
 
-        <div className="w-full md:w-1/2">
+        <div className="w-full md:w-1/2 flex justify-center md:justify-end items-center">
           <Image
             src={"/images/profile.png"}
             alt=""
             width={390}
             height={495}
-            className="w-[600px] h-[400px] md:w-[390px] md:h-[495px] ml-0 md:ml-[130px]"
+            className="w-[550px] h-[500px] md:w-[390px] md:h-[495px] ml-0 md:ml-[130px]"
           />
         </div>
         </div>
@@ -37,11 +38,11 @@ export default function Home() {
             <h1 className="text-4xl font-semibold text-center text-alert mt-20">Contact me</h1>
 
         <div className="w-full md:w-[1235px] sm-w-1/2 h-[414px] flex flex-col sm:flex-row mt-24">
-          <div className="w-full md:w-[50%] sm:w-[30%] sm:pl-[60px] mb-10">
-          <Image src={"/images/contact.png"} alt='' width={350} height={312} className="sm-w-full"/>
+          <div className="w-full md:w-[50%] sm:w-[30%] sm:pl-[60px] mb-10 flex justify-center">
+          <Image src={"/images/contact.png"} alt='contact' width={350} height={312} className="sm-w-full"/>
           </div>
 
-          <div className="w-full md:w-[50%] sm:w-[30%]  sm:pl-[60px]">
+          <div className="w-full md:w-1/2 sm:w-[30%]  sm:pl-[60px]">
           <input type='text' placeholder='Enter email address' className='p-2 border-2 border-grey-500 w-full md:w-[513px] sm:w-full'/>
           <textarea placeholder='Enter Your Message' className='p-2 border-2 border-grey-500 w-full md:w-[513px] sm:w-full h-[158px] mt-6'/>
           <div className='mx-auto md:ml-36 sm:ml-auto sm-mb-28 mt-6 mb-10 flex justify-center items-center w-[213.47px] h-[50px] border-2 bg-primary'>
